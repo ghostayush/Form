@@ -132,7 +132,7 @@ const Form = () => {
         </div> :
        
         <form onSubmit={handleSubmit}>
-    <div className='questions' id='first'>
+       <div className='questions' id='first'>
 	      <label className='head'>1: What subjects in school do you enjoy the most?</label>
         <div className='layer'>
         <div className='option'>
@@ -205,7 +205,8 @@ const Form = () => {
 	    </div>
       
 	    <button type="submit" id='submit'>Submit</button>
-     </form>}
+     </form>
+     }
      <button id='next' onClick={nexthandler}>Next</button>
     </Fragment>
   )

@@ -7,37 +7,36 @@ form{
     gap: 10px;
     font-family: 'Poppins', sans-serif;
 }
+form h1{
+    padding: 0;
+    color: beige;
+}
+/* .piechart{
+    width:auto;
+    height: 600px;
+} */
+.response-data{
+    text-align: center;
+    color: #fff;
+}
+.json-container {
+    font-size: 1.15rem;
+}
 .questions{
     display: none;
 }
 .questions.active{
-    padding: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
     width: 80%;
-    min-height: 32rem;
+    min-height: 5rem;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#fff;
+    /* background-color:#fff; */
     border-radius: 20px;
-}
-.response-data{
-   padding: .75rem;
-    min-width:20rem;
-    width: 80%;
-    min-height: 32rem;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-direction: column;
-    background-color:#fff;
-    border-radius: 20px;
-}
-.json-container {
-    font-size: 1.15rem;
 }
 .home{
     all: unset;
@@ -55,24 +54,51 @@ form{
     text-align: center;
     width: 80%;
     font-weight: bolder;
+    color: #fff;
 }
-.option{
+.options{
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  font-weight: 300;
-  gap:8px;
-  background-color: rgb(227, 211, 241);
+  justify-content: center;
+  width: 100%; 
+  gap: 10px; 
+  padding-top: 4px;
+  list-style: none;
+  color: #fff;
+  /* background-color:rgb(227, 211, 241); */
   border-radius: 20px;
-  padding: 1rem;
-  width: 100%;
-  box-shadow: 4px -16px rgb(186, 126, 239);
+  /* box-shadow: 4px -16px rgb(186, 126, 239); */
 }
-.layer{
-    box-shadow: 8px -30px rgb(136, 6, 243);
-    width: 60%;
-    margin-top: 2rem;
+input[type="radio"] {
+    display: none;
+}
+.answer{
+    /* background-color: aqua; */
+    height: 50px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border-radius: 20px;
+}
+
+span {
+    min-width: 20rem;
+    width: 30rem;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+span.selected {
+    background-color: seagreen; /* Change the background color when selected */
+  }
+.but{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 16%;
 }
 button{
     display: none;
@@ -87,6 +113,7 @@ button.active{
     font-size: 1.25rem;
     color: #fff;
     padding-bottom: 2px;
+    
 }
 #root{
     display: flex;
